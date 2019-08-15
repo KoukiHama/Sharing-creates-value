@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Oliver Fendt">
+        <link rel="canonical" href="https://open-source-compliance.github.io/Sharing-creates-value/Tooling-Landscape/OSS-Based-License-Compliance-Tools/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Existing OSS Tools - sharing-creates-value</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <link href="../../css/tweaks.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">sharing-creates-value</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tooling Landscape <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../">Overview</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Existing OSS Tools</a>
+</li>
+                                    
+<li >
+    <a href="../Toolchain-description/">Toolchain Elements Description</a>
+</li>
+                                    
+<li >
+    <a href="../DataModel/">Toolchain Data Model</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../contact/">Contact</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../Toolchain-description/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#existing-oss-licensed-oss-license-compliance-tools">Existing OSS licensed OSS license compliance tools</a></li>
+            <li><a href="#credits">Credits</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#bang">Bang</a></li>
+            <li><a href="#fossology">Fossology</a></li>
+            <li><a href="#scancode-toolkit">ScanCode Toolkit</a></li>
+            <li><a href="#aboutcode-toolkit">AboutCode Toolkit</a></li>
+            <li><a href="#deltacode">Deltacode</a></li>
+            <li><a href="#aboutcode-manager">AboutCode Manager</a></li>
+            <li><a href="#tracecode-toolkit">TraceCode toolkit</a></li>
+            <li><a href="#oss-discovery-by-openlogic">OSS Discovery by OpenLogic</a></li>
+            <li><a href="#licenseejs">Licensee.js</a></li>
+            <li><a href="#ninka">Ninka</a></li>
+            <li><a href="#eclipse-sw360">Eclipse SW360</a></li>
+            <li><a href="#eclipse-sw360antenna">Eclipse SW360antenna</a></li>
+            <li><a href="#oss-review-toolkit-ort">OSS Review Toolkit ORT</a></li>
+            <li><a href="#license-compatibility-checker">License Compatibility Checker</a></li>
+            <li><a href="#the-quartermaster-project-qmstr">The Quartermaster Project QMSTR</a></li>
+            <li><a href="#apache-rat">Apache Rat</a></li>
+            <li><a href="#apache-tentacles">Apache Tentacles</a></li>
+            <li><a href="#apache-whisker">Apache Whisker</a></li>
+            <li><a href="#cregit">Cregit</a></li>
+            <li><a href="#oss-attribution-builder">OSS Attribution Builder</a></li>
+            <li><a href="#osspolice">OSSPolice</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="existing-oss-licensed-oss-license-compliance-tools">Existing OSS licensed OSS license compliance tools</h1>
+<h2 id="credits">Credits</h2>
+<p>The overview of the tools is a derived work from <a href="https://github.com/doubleopen-project/doubleopen-publications">doubleOpen's Overview</a> . DoubleOpen's Overview is copyrighted by <a href="https://www.doubleopen.org/">doubleOpen</a> and available under the terms of <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>. The doubleOpen overview and this list will be syncronized. If you miss any OSS based compliance tool please add it either at the <a href="https://github.com/doubleopen-project/doubleopen-publications">doubleOpen repo</a> or in <a href="https://github.com/Open-Source-Compliance/Sharing-creates-value/tree/master/docs/Tooling-Landscape">our Github repo</a>. Help us to improve and to complete the information about the current existing OSS tools available for license compliance.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Open source software has eaten the world, but organizations are still struggling with effective compliance. Open source software is heterogenous and re-used, which, while positive for software development, creates a challenge for compliance. Compliance requires multiple tools and these should be ideally combined into a workflow that supports a number of business and developer requirements. One of the requirements is ease of use in a modern development environment where code development cycles are getting ever shorter and new development results are pushed to operations ever faster. For this to work, open source compliance tools likely need to integrate with development tooling.</p>
+<p>In the following report some of these tools are listed with information of their main license, website and a summary of their features, based on accounts by the projects. The report has been crafted to map out the wide range of open source tools that one might use to help keep their open source software compliant. However, this report, ever so comprehensive, is not exhaustive. The report includes FOSS tools as well as a few commercial tools. It also has a section for Open Source Initiatives and Development Environments, as these are  also important on a way towards automated open compliance with open tooling and open data. </p>
+<p>This report will be complemented based on an ecosystem survey and on practical testing of the most popular open source tools.</p>
+<p>This report is part of the first work package in the Double Open project. See <a href="https://doubleopen.org">doubleopen.org</a> for more details.</p>
+<h2 id="bang">Bang</h2>
+<p><strong>Website:</strong>        <a href="https://github.com/armijnhemel/binaryanalysis-ng">Bang</a><br>
+<strong>Main License:</strong>   <a href="https://www.gnu.org/licenses/agpl-3.0.txt">AGPL-3.0</a><br>
+<strong>Summary:</strong> <br>
+Binary Analysis Next Generation, or BANG, is a tool for analyzing binary files. Currently its main goal is to very quickly find out the contents of binary files, such as firmware updates, and making information extracted from the contents available for further analysis, such as license compliance, security research or composition analysis. It has support for around 130 different file formats, which can be detected, unpacked and labeled.</p>
+<h2 id="fossology">Fossology</h2>
+<p><strong>Website:</strong><a href="https://www.fossology.org/">Fossology</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GPL-2.0</a><br>
+<strong>Summary:</strong><br>
+Fossology is a scanning tool for license, copyright and export control scans. In one click you can generate an SPDX file, or a ReadMe with all the copyrights notices from your software. It provides a Web UI and a database for a compliance workflow. To scan, a package must be uploaded to the server. Scanners provided are Monk, Nomos and Ninka. It has version control on packages scanned, so when scanning a newer version of a previous package, only changed files are rescanned.</p>
+<h2 id="scancode-toolkit">ScanCode Toolkit</h2>
+<p><strong>Website:</strong>
+<a href="https://www.aboutcode.org/">ScanCode</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+ScanCode is a suite of command line utilities to reliably scan a codebase for license, copyright, package manifests and direct dependencies and other interesting origin and licensing information discovered in source and binary code files. ScanCode provides comprehensive scan results that you can save as JSON, HTML, CSV or SPDX. As a command line application returning JSON, ScanCode is easy to integrate in a code analysis pipeline and CI/CD.</p>
+<h2 id="aboutcode-toolkit">AboutCode Toolkit</h2>
+<p><strong>Website:</strong>
+<a href="https://www.aboutcode.org/">AboutCode</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+The AboutCode Toolkit and ABOUT files provide a simple way to document the origin, license, usage and other important or interesting information about third-party software components that you use in your project. In addition, this tool is able to generate attribution notices and identify redistributable source code used in your project.</p>
+<h2 id="deltacode">Deltacode</h2>
+<p><strong>Website:</strong>
+<a href="https://www.aboutcode.org/">AboutCode</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+DeltaCode allows you to easily compare ScanCode scans for two versions of a package, component, codebase or product in order to quickly identify possible changes with a focus on identifying license changes. DeltaCode reports matching files with a score and a list of factors that contribute to that score. </p>
+<p>You can use DeltaCode with ScanCode to identify and track license and related changes in open source or third party software packages or components from release to release. </p>
+<h2 id="aboutcode-manager">AboutCode Manager</h2>
+<p><strong>Website:</strong>
+<a href="https://www.aboutcode.org/">AboutCode</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+AboutCode Manager provides an advanced visual UI to help you quickly evaluate license and other notices identified by ScanCode and record your conclusion about the effective license(s) for a component. </p>
+<p>AboutCode Manager is based on Electron and is the primary desktop/GUI tool for using nexB’s AboutCode tools.</p>
+<h2 id="tracecode-toolkit">TraceCode toolkit</h2>
+<p><strong>Website:</strong>
+<a href="https://www.aboutcode.org/">AboutCode</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+TraceCode Toolkit helps you determine which components are actually distributed or deployed for your product. This is essential information for determining your open source license obligations because many are only triggered by distribution or deployment. </p>
+<p>TraceCode Toolkit is a tool to analyze the traced execution of a build, so you can learn which files are built into binaries and ultimately deployed in your distributed software.</p>
+<h2 id="oss-discovery-by-openlogic">OSS Discovery by OpenLogic</h2>
+<p><strong>Website:</strong>
+<a href="http://ossdiscovery.sourceforge.net/">OSS Discovery</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a><br>
+<strong>Summary:</strong><br>
+OSS Discovery finds the open source software embedded in applications and installed on computers. It is a scanning tool, which gives human readable and machine readable results.</p>
+<h2 id="licenseejs">Licensee.js</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/jslicense/licensee.js">Licensee.js</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+Licensee.js is a command line utility to check npm package dependency license metadata against rules. It uses SPDX license expression and whitelisted data to capture packages that are under different license than whitelisted.</p>
+<h2 id="ninka">Ninka</h2>
+<p><strong>Website:</strong>
+<a href="http://ninka.turingmachine.org/">Ninka</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GPL-2.0</a><br>
+<strong>Summary:</strong><br>
+Ninka is a lightweight license identification tool for source code. It is sentence-based, and provides a simple way to identify open source licenses in a source code file. It is capable of identifying several dozen different licenses (and their variations).</p>
+<h2 id="eclipse-sw360">Eclipse SW360</h2>
+<p><strong>Website:</strong>
+<a href="https://projects.eclipse.org/projects/technology.sw360">Eclipse SW360</a><br>
+<strong>Main License:</strong>
+<a href="https://www.eclipse.org/org/documents/epl-v10.php">EPL-1.0</a><br>
+<strong>Summary:</strong><br>
+A software catalogue application designed to provide a central place for sharing information about software components used by an organization. It is designed to neatly integrate into existing infrastructures related to the management of software artifacts and projects by providing separate backend services for distinct tasks and a set of portlets to access these services. It has connectors to interact with external systems such as code scan tools. Thus far the project has not provided download information.</p>
+<h2 id="eclipse-sw360antenna">Eclipse SW360antenna</h2>
+<p><strong>Website:</strong>
+<a href="https://projects.eclipse.org/projects/technology.sw360.antenna">Eclipse SW360</a><br>
+<strong>Main License:</strong>
+<a href="https://www.eclipse.org/legal/epl-2.0/">EPL-2.0</a><br>
+<strong>Summary:</strong><br>
+Eclipse SW360antenna is a tool to automate your open source license compliance processes as much as possible. In the end that is</p>
+<ul>
+<li>collecting all compliance relevant data,</li>
+<li>process that data and warn if there might be any license compliance related issues, and</li>
+<li>generating a set of compliance artifacts (source code bundle, disclosure document, report)</li>
+</ul>
+<p>for your project.</p>
+<h2 id="oss-review-toolkit-ort">OSS Review Toolkit ORT</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/heremaps/oss-review-toolkit">ORT</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+Verifies free and open source software license compliance by checking source code and dependencies. It works by analyzing the source code for dependencies, downloading the source code of the dependencies, scanning all source code for license information, and summarizing the results. The different tools that make up ORT are designed as libraries (for programmatic use) with a minimal command line interface (for scripted use). Currently the report formats are Excel sheet, NOTICE file, static HTML and Web App. </p>
+<h2 id="license-compatibility-checker">License Compatibility Checker</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/HansHammel/license-compatibility-checker#readme">license-compatibility-checker</a><br>
+<strong>Main License:</strong>
+<a href="https://opensource.org/licenses/MIT">MIT</a><br>
+<strong>Summary:</strong><br>
+Check npm dependencies' package.json for license compatibility based on SPDX standards. Claimed to be a work in progress, but gives a simple comparison of the licenses in the package with an explanation to how permissive the license is (Permissive &gt; Weakly Protective &gt; Strongly Protective &gt; Network Protective). Shows potential incompatibilities with a colorful scheme.</p>
+<h2 id="the-quartermaster-project-qmstr">The Quartermaster Project QMSTR</h2>
+<p><strong>Website:</strong>
+<a href="https://qmstr.org/">QMSTR</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a><br>
+<strong>Summary:</strong><br>
+Quartermaster is a suite of command line tools and build system extensions that instruments software builds to create FOSS compliance documentation and support compliance decisions. Quartermaster runs adjacent to a software build process. A master process collects information about the software that is build. Once the build is complete, the master executes a number of analysis tools, and finally a number of reporters. All modules are executed in the context of the master, not the build machine. The master ships all dependencies of the modules without affecting the build clients file system (it runs in a container).</p>
+<h2 id="apache-rat">Apache Rat</h2>
+<p><strong>Website:</strong>
+http://creadur.apache.org/rat/ <br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+Apache Rat is a release audit tool, focused on licenses. Coded in Java, it runs from the command line with plugins for Maven and Ant. Rat is extensible. It is part of the Apache Creadur project.</p>
+<h2 id="apache-tentacles">Apache Tentacles</h2>
+<p><strong>Website:</strong>
+<a href="http://creadur.apache.org/tentacles/">Apache Tentacles</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+Apache Tentacles helps the reviewer by automating interactions with the repository containing the artifacts comprising the release. Apache Tentacles simplifies the job of reviewing repository releases consisting of large numbers of artifacts. Coded in Java, it runs from the command line.</p>
+<h2 id="apache-whisker">Apache Whisker</h2>
+<p><strong>Website:</strong>
+<a href="http://creadur.apache.org/whisker/">Apache Whisker</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+Apache Whisker assists assembled applications maintain correct legal documentation.
+Whisker can </p>
+<ul>
+<li>verify - checking meta-data quality against a distribution</li>
+<li>generate - legal documents from meta-data</li>
+</ul>
+<p>Particular useful for complex assembled applications.</p>
+<h2 id="cregit">Cregit</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/cregit/cregit">Cregit</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a><br>
+<strong>Summary:</strong><br>
+Cregit identifies the contributors of source code. The cregit version of a source file has two interactive features:</p>
+<ul>
+<li>
+<p>Mouse-over: you will get a summary of the information of the commit that added this token. This information is:</p>
+<ul>
+<li>Its commit id</li>
+<li>Its git-author (the value of the Author field of the commit)</li>
+<li>Its git-author-date (the value of the field Author Date of the commit)</li>
+<li>Summary log of the commit</li>
+</ul>
+</li>
+<li>
+<p>Left-click on a token will open a new window with the details of the commit (in github). You can keep this window open and it will keep reloading the files.</p>
+</li>
+</ul>
+<h2 id="oss-attribution-builder">OSS Attribution Builder</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/amzn/oss-attribution-builder">OSS Attribution Builder</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a><br>
+<strong>Summary:</strong>
+OSS Attribution Builder is a website that helps teams create attribution documents for software products. </p>
+<h2 id="osspolice">OSSPolice</h2>
+<p><strong>Website:</strong>
+<a href="https://github.com/osssanitizer/osspolice">OSSPolice</a><br>
+<strong>Main License:</strong>
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a><br>
+<strong>Summary:</strong><br>
+OSSPolice is a risk assessment service for developers that can quickly identify potential free software license violations and known n-day security vulnerabilities in their apps. </p>
+<h3 id="tern">Tern</h3>
+<p><strong>Website:</strong>
+<a href="https://github.com/vmware/tern">Tern</a><br>
+<strong>Main License:</strong>
+<a href="https://opensource.org/licenses/BSD-2-Clause">BSD-2-Clause</a><br>
+<strong>Summary:</strong><br>
+Tern is a software package inspection tool for containers written in Python. Tern is an inspection tool to find the metadata of the packages installed in a container image. It does this in two steps:</p>
+<ol>
+<li>It uses overlayfs to mount the first filesystem layer in a container image</li>
+<li>It then executes scripts from the "command library" in a chroot environment to collect information about packages installed in that layer</li>
+<li>With that information as a base, it continues to iterate over step 1 and 2 for the rest of the layers in the container image</li>
+<li>Once done, it generates a report in different formats. The default report is a verbose explanation of what layers brought in what software components. If a Dockerfile is provided then it will also provide what lines in the Dockerfile was used to create the layers.</li>
+</ol>
+<h3 id="spdx-tools">SPDX Tools</h3>
+<p><strong>Website:</strong>
+<a href="https://spdx.org/tools">SPDX Tools</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+The consolidated SPDX workgroup tool provides translation, comparison, and verification functionality in a single download. The tool is a Java command line utility.</p>
+<p>The following functions are available:</p>
+<ul>
+<li>TagToSpreadsheet - Convert a tag format input file to a spreadsheet output file</li>
+<li>TagToRDF - Convert a tag format input file to an RDF format output file</li>
+<li>RdfToTag - Convert an RDF format input file to a tag format output file</li>
+<li>RdfToHtml - Convert an RDF format input file to an HTML web page output file</li>
+<li>RdfToSpreadsheet - Convert an RDF format input file to a spreadsheeet format output file</li>
+<li>SpreadsheetToRDF - Convert a spreadsheet input file to an RDF format output file</li>
+<li>SpreadsheetToTag - Convert a spreadsheet input file to a tag format output file</li>
+<li>SPDXViewer - Display an SPDX document input file (in either tag/value or RDF format)</li>
+<li>CompareMultipleSpdxDocs - Compare multiple SPDX documents (in either tag/value or RDF formats) and output to a spreadsheet</li>
+<li>CompareSpdxDocs - Compare two SPDX documents (in either tag/value or RDF format)</li>
+<li>GenerateVerificationCode - Geneinkrate a Verification Code from a directory of files.</li>
+</ul>
+<h3 id="spdx-maven-plugin">SPDX Maven Plugin</h3>
+<p><strong>Website:</strong>
+<a href="https://github.com/spdx/spdx-maven-plugin">SPDX Maven Plugin</a><br>
+<strong>Main License:</strong>
+<a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache-2.0</a><br>
+<strong>Summary:</strong><br>
+SPDX Maven Plugin is a plugin to Maven which produces Software Package Data Exchange (SPDX) documents for artifacts described in the POM file. </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; The Tooling Group. <br>The Content is licensed under CC-BY-SA-4.0 <br> Credits to David Delvalle for the design of our Logo</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
