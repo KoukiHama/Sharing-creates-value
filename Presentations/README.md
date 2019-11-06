@@ -1,6 +1,36 @@
 # This directory contains presentations about the Open Source Tooling Group, its work and its objectives
 
-The structure of the directory is organized as a stack - the most recent presentation is the presentation at the top.
+The presentation [OpenChain Tooling Work Group - One Slide Overview](./OSS-Tooling-Group-One-Pager-5.0.pdf) is a high level overview about the aims of the OpenChain Tooling Work Group. It can be used to introduce the Work Group to others. The overview slide in pptx-format is available in the [Templates directory](../Templates/OSS-Tooling-Group-One-Pager-5.0.pptx)
+
+Besides the overview presentation the structure of the directory is organized as a stack - the most recent presentation is the presentation at the top.
+
+## [OpenChain Tooling Work Group - One Slide Overview](./OSS-Tooling-Group-One-Pager-5.0.pdf)
+
+Date: 7th of Oct 2019
+
+## [OpenChain Tooling Work Group - Overview](./SPDX-Mini-Summit-OSS-Tooling-Work-Group-2019.pptx)
+
+Author: Oliver Fendt, Siemens AG
+
+Date: 31th of Oct 2019
+
+Event: SPDX mini summit
+
+## [OSS Review Toolkit: Using FOSS Tools for FOSS Reviews in CI/CD World](./OSS-Review-Toolkit-Using-FOSS-tools-for-FOSS-reviews-in-CI-CD-world.pdf)
+
+Author: Thomas Steenbergen, Here Technologies
+
+Date: 30th of Oct 2019
+
+Event: OSS Summit Europe 2019
+
+## [COMPLIANCE PUZZLE](./Compliance-Puzzle.pdf)
+
+Author: Sebastian Schuberth, BOSCH Software Innovations
+
+Date: 29th of Oct 2019
+
+Event: OSS Summit Europe 2019
 
 ## [OpenChain Tooling Work Group - Overview](./AK-OSS-Bitkom-tooling-working-group-overview.pdf)
 
