@@ -88,6 +88,12 @@ Barista admins determine which obligation(s) are associated with each license de
 _Cloud Native Architecture_<br>
 Barista is designed for cloud native deployment environments allowing hosting flexibility and scalability on demand.
 
+## Bubbly
+**Website:**        [Bubbly](https://github.com/valocode/bubbly/)<br>
+**Main License:**   [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)<br>
+**Summary:**<br>
+Bubbly is a release readiness platform helping software teams release compliant software with confidence. Gain visibility into your release process with reports and analytics to lower risk, increase quality, reduce cycle time and drive continuous improvement.
+
 ## CLA Assistant
 **Website:**        [CLA Assistant](https://github.com/cla-assistant/cla-assistant)<br>
 **Main License:**   [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)<br>
@@ -146,6 +152,19 @@ Eclipse SW360antenna is a tool to automate your open source license compliance p
 
 for your project.
 
+## Flict
+**Website:**[Flict](https://github.com/vinland-technology/flict)<br>
+**Main License:**
+[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html)<br>
+**Summary:**<br>
+FOSS License Compatibility Tool (flict) is a Free and Open Source Software tool to verify license compatibility for a package and its dependencies. You can use the tool to automate license compatibility verification in your compliance work flow.
+
+flict can:
+* verify licenses compatibilty for license expression and a packages and its dependencies
+* suggest candidate outbound licenses
+* simplify license expressions
+* display, in misc format, compatibilies between licenses
+* check outbound licenses against a policy (policy as supplied by the user)
 
 ## Fossology
 **Website:**[Fossology](https://www.fossology.org/ )<br>
@@ -154,6 +173,24 @@ for your project.
 **Summary:**<br>
 Fossology is a scanning tool for license, copyright and export control scans. In one click you can generate an SPDX file, or a ReadMe with all the copyrights notices from your software. It provides a Web UI and a database for a compliance workflow. To scan, a package must be uploaded to the server. Scanners provided are Monk, Nomos and Ninka. It has version control on packages scanned, so when scanning a newer version of a previous package, only changed files are rescanned.
 
+
+## FOSSLight
+**Website:**[FOSSLight](https://fosslight.org/)<br>
+**Main License:**
+[AGPL-30 and others](https://www.gnu.org/licenses/agpl-3.0.en.html)<br>
+**Summary:**<br>
+FOSSLight is an integrated system that can efficiently process the open source compliance process. It provides:
+* Compliance Workflow: It can process the open source compliance workflow.
+* Compliance Hub: You can manage everything about open source compliance such as license, oss, vulnerability and others.
+* Scalability´: It can be used with additional features (including FOSSLight scanner or other plugins).
+
+## LDBCollector
+**Website:**
+[LDBcollector](https://github.com/maxhbr/LDBcollector)<br>
+**Main License:**
+[BSD-3-Clause](https://github.com/maxhbr/LDBcollector/blob/master/LICENSE)<br>
+**Summary:**<br>
+A small application which collects oss-license metadata and combines it.
 
 ## License Compatibility Checker
 **Website:**
@@ -180,6 +217,19 @@ Licensee.js is a command line utility to check npm package dependency license me
 [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)<br>
 **Summary:**<br>
 Ninka is a lightweight license identification tool for source code. It is sentence-based, and provides a simple way to identify open source licenses in a source code file. It is capable of identifying several dozen different licenses (and their variations).
+
+## Opossum Tool
+**Website:**
+[Oposssum Tool](https://github.com/opossum-tool)<br>
+**Main License:**
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)<br>
+**Summary:**<br>
+A light-weight app to audit and inventory large codebases for open source license compliance.<br>
+OpossumUI was developed with the goal to build a tool for managing and combining open source compliance data from different sources. While existing analysis tools for software compliance can provide good information, using multiple of such tools often leads to huge amounts of data due to an increased detection rate. Even though the results can be merged and noise can be filtered through automatic tools, final manual revisions are often necessary. So, OpossumUI was born: A light-weight app for review of compliance information for large codebases.
+OpossumUI is a tool to:
+* discover open source software used in applications.
+* review licenses.
+* generate reports from an open source code scan.
 
 
 ## OSS Attribution Builder
@@ -226,6 +276,18 @@ OSSPolice is a risk assessment service for developers that can quickly identify 
 **Summary:**<br>
 Quartermaster is a suite of command line tools and build system extensions that instruments software builds to create FOSS compliance documentation and support compliance decisions. Quartermaster runs adjacent to a software build process. A master process collects information about the software that is build. Once the build is complete, the master executes a number of analysis tools, and finally a number of reporters. All modules are executed in the context of the master, not the build machine. The master ships all dependencies of the modules without affecting the build clients file system (it runs in a container).
 
+
+## ScanCode.io and ScanPipe
+**Website:**
+[ScanCode.io](https://scancodeio.readthedocs.io/en/latest/introduction.html#)<br>
+**Main License:**
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)<br>
+**Summary:**<br>
+ScanCode.io is a server to script and automate the process of Software Composition Analysis (SCA) to identify any open source components and their license compliance data in an application’s codebase. ScanCode.io can be used for various use cases, such as Docker container and VM composition analyses, among other applications.
+
+ScanPipe is a developer-friendly framework and application that helps software analysts and engineers build and manage real-life software composition analysis projects as scripted pipelines.
+
+ScanPipe provides a unified framework to the infrastructure that is required to execute and organize these software composition analysis projects.
 
 ## ScanCode Toolkit
 **Website:**
